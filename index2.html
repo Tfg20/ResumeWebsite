@@ -1,0 +1,323 @@
+<html>
+<head>
+<title>Thomas Gigliotti Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
+h1, h2 {color:#993030}
+.w3-row-padding img {margin-bottom: 12px}
+#main {margin-left: 10px}
+#Avatar {width: 320px; margin-left: auto; margin-right: auto; display: block;  -moz-box-shadow: 0px 6px 5px rgb(0, 0, 0);
+  -webkit-box-shadow: 0px 6px 5px #ccc;
+  box-shadow: 0px 6px 5px rgb(0, 0, 0);
+  -moz-border-radius:190px;
+  -webkit-border-radius:190px;
+  border-radius:190px;
+  max-width:100%;
+  height:auto;
+
+}
+#avatarHolder { background-image: url('avBG2.png');}
+#picScroll {margin-left: 42%; margin-right: 20%;}
+#slide1{box-shadow: 0px 3px 5px rgb(0, 0, 0);}
+#slide2{box-shadow: 0px 3px 5px rgb(0, 0, 0);}
+#eContent{width: 70%; display: flex; align-items: center; justify-content: center;}
+
+.app{display: flex; min-height: 100vh; position: fixed;}
+.sidebar{flex: 1 1 0; max-width: 300px; padding: 2rem 1rem; background-color: #000000}
+.sidebar h3{
+  color: #ffffff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+.sidebar .menu {
+  margin: 0 -1rem;
+}
+.sidebar .menu .menu-item {
+  display: block;
+  padding: 1em;
+  color: #FFF;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+.sidebar .menu .menu-item:hover, .sidebar .menu .menu-item.is-active {
+  color: #993030;
+  border-right: 5px solid #993030;
+}
+
+.menu-toggle{
+  display: none;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 99px;
+  background-color: #303030;
+  cursor: pointer;
+}
+
+.hamburger{
+  position: relative;
+  top: calc(50% - 2px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+}
+
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 99px;
+  background-color: #fff;
+  transition-duration: .25s;
+}
+
+.hamburger > span::before {
+  content: '';
+  top: -8px;
+}
+
+.hamburger > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu-toggle.is-active .hamburger > span {
+  transform: rotate(45deg);
+}
+
+.menu-toggle.is-active .hamburger > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+.menu-toggle.is-active .hamburger > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 1024px){
+  .sidebar {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px){
+  .menu-toggle {
+    display: block;
+  }
+  .content{
+    padding-top: 8rem;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: -200px;
+    height: 100vh;
+    width: 100%;
+    max-width: 200px;
+    transition: 0.2s linear;
+  }
+
+.sidebar.is-active {
+  left: 0;
+}
+}
+
+</style>
+
+
+</head>
+<body>
+<div class = "app w3-content" >
+
+  <div class= "menu-toggle" id = "menu-toggle">
+    <div class="hamburger">
+      <span></span>
+    </div>
+  </div>
+
+  <aside class = "sidebar">
+    <h3>Menu</h3>
+     <nav class = "menu">
+       <a href ="index2.html" class="menu-item is-active">Home</a>
+       <a href ="index2.html#contactMe" class="menu-item">Contact</a>
+       <h3> - Projects</h3>
+       <a href ="vp1.html" class="menu-item">Senior Design</a>
+       <a href ="Vp2.html" class="menu-item">Movie Review</a>
+     </nav>
+ </aside>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small"></span>Thomas Gigliotti</h1>
+  </header>
+
+     <!-- Head Photo Section -->
+  <div class="w3-content w3-justify w3-text-black w3-padding-16" id="avatarHolder" >
+    <img src="avatar3.png" id="Avatar">
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-black" id="contact">
+    <div class="w3-section">
+      <a href= #contactMe><i class="fa fa-envelope fa-fw w3-xxlarge w3-hover-opacity w3-margin-right"></i></a>
+      <a href="https://www.linkedin.com/in/thomas-gigliotti-b28052222/"><i class="fa fa-linkedin fa-fw w3-xxlarge w3-hover-opacity w3-margin-right"></i></a>
+      <a href="https://github.com/Tfg20"><i class="fa fa-github fa-fw w3-xxlarge w3-hover-opacity w3-margin-right"></i></a>
+    </div><br>
+  </div>
+   
+  <!-- End Contact Section -->
+
+   <!-- About Section -->
+   <div class="w3-content w3-justify w3-text-black w3-padding-32 " id="about">
+    <h2>About Me:</h2>
+    <br>
+    <p>
+      I am a motivated recent graduate
+      seeking a full time job in the 
+      Computer Science field and gain 
+      hands-on experience. I am very 
+      outgoing, friendly, and hard-working. I 
+      love working with people. I have had a 
+      passion for computers since I was three years old
+      playing "Warcraft 3" with my father on his laptop.
+    </p>
+    <br>
+    <h2>Previous Employment:</h2>
+   <br>
+    <h4>Mobile Expert</h4>
+    <ul>
+      <li>Demonstrated and sold mobile devices to guests, showcasing latest
+        product features and capabilities.</li>
+      <li>Answered guest questions and walked through features of wireless
+        devices to resolve confusion about device features.</li>
+      <li>
+        Used on-site computer systems to access figures and documentation
+        associated with available service plans.
+      </li>
+      <li>
+        Used on-site computer systems to access figures and documentation
+        associated with available service plans.
+      </li>
+     <li>
+      Explained latest promotions, sales incentives and offerings to promote
+      savings and drive sales.
+     </li>
+      
+    </ul>
+      <p>Bartlesville, OK: KCI Wireless/ May 2018 to Dec 2019</p>
+ 
+  <br>
+    <h2>Education:</h2>
+    <br>
+    <h4>Florida Atlantic University</h4>
+    <ul>
+      <li>Recieved a Bachelors of Science degree in Computer Science from the College of Engineering and Computer Science.</li>
+    </ul>
+      <p>Boca Raton, FL: Jan 2020 to Dec 2022</p>
+
+      <h4>Rogers State University</h4>
+      <ul>
+        <li>Recieved an Associates of Science degree in Computer Science from Rogers State University.</li>
+      </ul>
+        <p>Boca Raton, FL: June 2017 to Dec 2019</p><br>
+    <br>
+
+    <h2>Skills:</h2>
+    <br>
+    <ul>
+      <li>Html</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>MongoDB</li>
+      <li>NodeJS</li>
+    </ul>
+<br>
+</div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content" style=" background-color: #ffffff; box-shadow: 0 0 10px 2px #ccc;" id="contactMe">
+    <h2 style="text-align: center; margin-bottom: 30px;">Contact Me</h2>
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <label for="company" style="margin-bottom: 10px;">Company:</label>
+        <input type="text" id="Company" style="width: 50%; padding: 10px; margin-bottom: 20px;">
+  
+        <label for="name" style="margin-bottom: 10px;">Name:</label>
+        <input type="text" id="Name" style="width: 50%; padding: 10px; margin-bottom: 20px;">
+  
+        <label for="email" style="margin-bottom: 10px;">Email:</label>
+        <input type="email" id="email" style="width: 50%; padding: 10px; margin-bottom: 20px;">
+  
+        <label for="content" style="margin-bottom: 10px;">Content:</label>
+        <textarea id="eContent" style="width: 50%; height: 150px; padding: 10px; margin-bottom: 20px;"></textarea>
+  
+        <input type="submit" style="background-color: #000000; color: rgb(255, 255, 255); padding: 10px 20px; border: none; border-radius: 5px;"></input>
+      </div>
+    </form>
+  </div>
+   
+  <!-- End Contact Section -->
+  </div>
+</body>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-black w3-small">
+<p>Website programmed by Thomas Gigliotti</p>
+  <!-- End footer -->
+  </footer>
+
+<!-- End of Page -->
+</div>
+
+<script>
+
+
+  function sendEmail(){
+    Email.send({
+    SecureToken: "2f13351b-a6bb-4223-8773-e66b169dc92a",
+
+    To : 'thomasgigliottijr@gmail.com',
+    From : "spionifo@gmail.com",
+    Subject : "Email from Resume Website",
+    Body : "Company: " + document.getElementById("Company").value
+    + "<br> Name: " + document.getElementById("Name").value
+    + "<br> Email: " + document.getElementById("email").value
+    + "<br> Content: " + document.getElementById("eContent").value
+}).then(
+  message => alert(message)
+);
+  }
+
+// sidebar toggle function
+  const menu_toggle = document.querySelector('.menu-toggle');
+  const sidebar = document.querySelector('.sidebar');
+
+  menu_toggle.addEventListener('click', () => {
+    console.log("test")
+    menu_toggle.classList.toggle('is-active');
+    sidebar.classList.toggle('is-active');
+  })
+
+  </script>
+</html>

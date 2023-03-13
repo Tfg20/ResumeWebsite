@@ -1,0 +1,269 @@
+<html>
+<head>
+<title>Thomas Gigliotti Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+<link rel="stylesheet" href="css/Style2.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif; background: rgb(255, 255, 255)}
+h1 {color:#993030}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;height: 408px; background: rgb(245, 245, 245); box-shadow: 0px 2px 5px rgb(0, 0, 0);}
+#main {margin-left: 10px}
+#Avatar {width: 320px; margin-left: 33%; margin-right: 20%;  -moz-box-shadow: 0px 6px 5px rgb(0, 0, 0);
+  -webkit-box-shadow: 0px 6px 5px #ccc;
+  box-shadow: 0px 6px 5px rgb(0, 0, 0);
+  -moz-border-radius:190px;
+  -webkit-border-radius:190px;
+  border-radius:190px;}
+#avatarHolder { background-image: url('avBG2.png');}
+#open {margin-left: 120px; position: fixed; box-shadow: 0px 1px 2px rgb(0, 0, 0);}
+#picScroll {margin-left: 42%; margin-right: 20%;}
+#slide1{box-shadow: 0px 3px 5px rgb(0, 0, 0);}
+#slide2{box-shadow: 0px 3px 5px rgb(0, 0, 0);}
+#eContent{width: 70%; display: flex; align-items: center; justify-content: center;}
+
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center"  id="side_Navbar">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>About</p>
+  </a>
+  <a href="#Search" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-youtube w3-xxlarge"></i>
+    <p>Videos</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-file-photo-o w3-xxlarge"></i>
+    <p>Photos</p>
+  </a>
+  <a href="#sendEmail" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Contact Me</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="side_Links">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#about" class="w3-bar-item w3-button"  >About</a>
+    <a href="#Search" class="w3-bar-item w3-button"  >Videos</a>
+    <a href="#photos" class="w3-bar-item w3-button"  >Photos</a>         <!--style="width:25% !important"-->
+    <a href="#contact" class="w3-bar-item w3-button" >Contact</a>
+  </div>
+</div>
+
+<div id="open">
+  <button class="openbtn" onclick="isNav()">&#9776;</button>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small"></span>Thomas Gigliotti</h1>
+  </header>
+
+     <!-- Head Photo Section -->
+  <div class="w3-content w3-justify w3-text-black w3-padding-16" id="avatarHolder" >
+    <img src="avatar3.png" id="Avatar">
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-black" id="contact">
+    <div class="w3-section">
+      <a href= #sendEmail><i class="fa fa-envelope fa-fw w3-xxlarge w3-hover-opacity w3-margin-right"></i></a>
+      <a href="https://www.linkedin.com/in/thomas-gigliotti-b28052222/"><i class="fa fa-linkedin fa-fw w3-xxlarge w3-hover-opacity w3-margin-right"></i></a>
+      <a href="https://github.com/Tfg20"><i class="fa fa-github fa-fw w3-xxlarge w3-hover-opacity w3-margin-right"></i></a>
+    </div><br>
+   
+  <!-- End Contact Section -->
+
+   <!-- About Section -->
+   <div class="w3-content w3-justify w3-text-black w3-padding-32 " id="about">
+    <h2 class="w3-text-black">About Me:</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+      I am a motivated recent graduate
+      seeking a full time job in the 
+      Computer Science field and gain 
+      hands-on experience. I am very 
+      outgoing, friendly, and hard-working. I 
+      love working with people. I have had a 
+      passion for computers since I was three years old
+      playing "Warcraft 3" with my father on his laptop.
+    </p>
+    <br>
+    <h2 class="w3-text-black">Previous Employment</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <h4>Mobile Expert</h4>
+    <ul>
+      <li>Demonstrated and sold mobile devices to guests, showcasing latest
+        product features and capabilities.</li>
+      <li>Answered guest questions and walked through features of wireless
+        devices to resolve confusion about device features.</li>
+      <li>
+        Used on-site computer systems to access figures and documentation
+        associated with available service plans.
+      </li>
+      <li>
+        Used on-site computer systems to access figures and documentation
+        associated with available service plans.
+      </li>
+     <li>
+      Explained latest promotions, sales incentives and offerings to promote
+      savings and drive sales.
+     </li>
+      
+    </ul>
+      <p>Bartlesville, OK: KCI Wireless/ May 2018 to Dec 2019</p>
+ 
+    </div><br>
+    <h2 class="w3-text-black">Education:</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <h4>Florida Atlantic University</h4>
+    <ul>
+      <li>Recieved a Bachelors of Science degree in Computer Science from the College of Engineering and Computer Science.</li>
+    </ul>
+      <p>Boca Raton, FL: Jan 2020 to Dec 2022</p>
+
+      <h4>Rogers State University</h4>
+      <ul>
+        <li>Recieved an Associates of Science degree in Computer Science from Rogers State University.</li>
+      </ul>
+        <p>Boca Raton, FL: June 2017 to Dec 2019</p><br>
+
+ <!-- Videos -->
+  <div class="w3-padding-64 w3-content w3-text-black" id="Search">
+    <div id ="Request">
+      <h2>Watch Videos Detailing My Work</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <br>
+        </div>
+          <iframe width="920" height="580"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY">  <!-- Youtube Video -->
+          </iframe>
+          <br>
+      </div>
+      
+<!-- Photo Section -->
+  <div class="w3-padding-0  w3-content style=" id="photos">
+    <h2 class="w3-text-black">Photos of my Work:</h2>
+    <hr style="width:200px" class="w3-opacity">
+</div>
+
+<div class="w3-padding-32" >
+  <img class="mySlides" id="slide1" src="C:\Users\spion\Documents\GitHub\ED1G7_Unity-main beta\ED1G7_Unity-main\ATE Less Files\Assets\MyAssets\Scripts\Frontend (Website)\photos\keyboard.jpg"  style="height:580px; width:920px">
+  <img class="mySlides" id="slide2" src="C:\Users\spion\Documents\GitHub\ED1G7_Unity-main beta\ED1G7_Unity-main\ATE Less Files\Assets\MyAssets\Scripts\Frontend (Website)\photos\simulation.jpg"  style="height:580px; width:920px">
+    <br>
+    <div class=" w3-content w3-display-container" id = picScroll >
+    <div class="	fa fa-chevron-circle-left w3-xxlarge w3-hover-text-khaki" onclick="plusDivs(1)"></div>
+    <div class="	fa fa-chevron-circle-right w3-xxlarge w3-hover-text-khaki" onclick="plusDivs(-1)"></div>
+</div>
+</div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32" style=" background-color: #ffffff; box-shadow: 0 0 10px 2px #ccc;" id="contactMe">
+    <h2 style="text-align: center; margin-bottom: 30px;">Contact Me</h2>
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <label for="company" style="margin-bottom: 10px;">Company:</label>
+        <input type="text" id="Company" style="width: 50%; padding: 10px; margin-bottom: 20px;">
+  
+        <label for="name" style="margin-bottom: 10px;">Name:</label>
+        <input type="text" id="Name" style="width: 50%; padding: 10px; margin-bottom: 20px;">
+  
+        <label for="email" style="margin-bottom: 10px;">Email:</label>
+        <input type="email" id="email" style="width: 50%; padding: 10px; margin-bottom: 20px;">
+  
+        <label for="content" style="margin-bottom: 10px;">Content:</label>
+        <textarea id="eContent" style="width: 50%; height: 150px; padding: 10px; margin-bottom: 20px;"></textarea>
+  
+        <input type="submit" style="background-color: #000000; color: rgb(255, 255, 255); padding: 10px 20px; border: none; border-radius: 5px;"></input>
+      </div>
+    </form>
+  </div>
+   
+  <!-- End Contact Section -->
+  </div>
+</div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-black w3-small">
+<p>Website programmed by Thomas Gigliotti</p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+<script>
+
+  function isNav() {
+    var element = document.getElementById("side_Navbar");
+      if (element.style.width == "120px") {
+          element.style.width = "0px";
+      } else {
+          element.style.width = "120px";
+      }
+  }
+  
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {2
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-black", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-black";
+  }
+
+  function sendEmail(){
+    Email.send({
+    SecureToken: "2f13351b-a6bb-4223-8773-e66b169dc92a",
+
+    To : 'thomasgigliottijr@gmail.com',
+    From : "spionifo@gmail.com",
+    Subject : "Email from Resume Website",
+    Body : "Company: " + document.getElementById("Company").value
+    + "<br> Name: " + document.getElementById("Name").value
+    + "<br> Email: " + document.getElementById("email").value
+    + "<br> Content: " + document.getElementById("eContent").value
+}).then(
+  message => alert(message)
+);
+  }
+  </script>
+  
+</html>
